@@ -1,0 +1,31 @@
+{
+  "name": "ssx/cmp-barclays",
+  "description": "A sample bank for a sample talk.",
+  "type": "project",
+  "license": "Apache2.0",
+  "authors": [
+    {
+      "name": "Scott Wilcox",
+      "email": "scott@dor.ky"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "guzzlehttp/guzzle": "6",
+    "ssx/cmp-interfaces": "^1.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Banking\\Banks\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url":  "git@github.com:ssx/cmp-interfaces.git"
+    }
+  ]
+}
